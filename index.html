@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script type="module" src="./index.js" defer></script>
+    <script type="module" src="./index.js" async></script>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -16,19 +16,16 @@
     <div class="review-card">
       <div class="image-container">
         <div class="quotationmarks">"</div>
-        <img src="" alt="image of reviewer" id="reviewer-image" />
+        <canvas id="picture">
+          <img src="./images/user_default_grey.png" alt="picture of reviewer">
+        </canvas>
       </div>
       <div class="name-and-job">
-        <h2>person name</h2>
-        <h3>job description</h3>
+        <h2 id="name">person name</h2>
+        <h3 id="job">job description</h3>
       </div>
-      <p class="review-para">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et delectus
-        unde assumenda dolor quisquam sapiente dolores mollitia obcaecati ipsa
-        qui tempore, incidunt libero blanditiis architecto. Deleniti, dolores
-        recusandae. Atque nostrum illo beatae sed officiis id quidem aperiam!
-        Impedit consectetur repellendus explicabo odit ex, mollitia fugit
-        repellat doloribus, magnam rerum sed.
+      <p id="review">
+        
       </p>
     </div>
   </body>
